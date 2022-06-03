@@ -19,6 +19,25 @@ function ShoppingList() {
     setItems([...items, newItem])
   }
 
+  function handleIsInCartChange(id, isInCart) {
+    const updateItemsArr = items.map((item) => {
+      if (item.id === id) {
+        return ({
+          ...item,
+          isInCart: isInCart
+        })
+      } else {
+        return item
+      }
+    })
+    setItems(updateItemsArr)
+  }
+
+  function handleDelete(id) {
+    const updateItemsArr = items.filter((item) => item.id !== id)
+    setItems(updateItemsArr)
+  }
+
   function handleCategoryChange(category) {
     setSelectedCategory(category);
   }
@@ -38,7 +57,7 @@ function ShoppingList() {
       />
       <ul className="Items">
         {itemsToDisplay.map((item) => (
-          <Item key={item.id} item={item} />
+          <Item key={item.id} item={item} onIsInCartChange={handleIsInCartChange} onDelete={handleDelete} />
         ))}
       </ul>
     </div>

@@ -10,55 +10,31 @@
       "id": 2,
       "name": "Pomegranate",
       "category": "Produce",
-      "isInCart": false
+      "isInCart": true
     },
     {
-      "id": 3,
+      "name": "Chicken",
+      "category": "Produce",
+      "isInCart": false,
+      "id": 3
+    },
+    {
       "name": "Lettuce",
       "category": "Produce",
-      "isInCart": false
+      "isInCart": false,
+      "id": 4
     },
     {
-      "id": 4,
-      "name": "String Cheese",
+      "name": "Milk",
       "category": "Dairy",
-      "isInCart": false
+      "isInCart": false,
+      "id": 5
     },
     {
-      "id": 5,
-      "name": "Swiss Cheese",
-      "category": "Dairy",
-      "isInCart": false
-    },
-    {
-      "id": 6,
-      "name": "Cookies",
+      "name": "Vanilla Ice Cream",
       "category": "Dessert",
-      "isInCart": false
-    },
-    {
-      "name": "series",
-      "category": "Produce",
       "isInCart": false,
-      "id": 7
-    },
-    {
-      "name": "",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 8
-    },
-    {
-      "name": "hiii",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 9
-    },
-    {
-      "name": "SONNNN",
-      "category": "Produce",
-      "isInCart": false,
-      "id": 10
+      "id": 6
     }
   ]
 }
